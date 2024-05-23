@@ -1,0 +1,71 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2706
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fswiss\fcharset0 Helvetica-BoldOblique;
+}
+{\colortbl;\red255\green255\blue255;\red29\green29\blue29;\red255\green255\blue255;\red27\green97\blue146;
+}
+{\*\expandedcolortbl;;\cssrgb\c14902\c14902\c14902;\cssrgb\c100000\c100000\c100000;\cssrgb\c12549\c45882\c63922;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid1\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid2\'01\'01;}{\levelnumbers\'01;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Week 3 notes and links\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf2 \cb3 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Preparing for class:
+\f0\b0\fs21 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Install\'a0{\field{\*\fldinst{HYPERLINK "https://www.mongodb.com/try/download/community"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 MongoDB Community Server}}\'a0(use the defaults, including installing MongoDB Compass).\cb1 \
+\ls1\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 For Mac, follow these instructions for installation using homebrew:\'a0{\field{\*\fldinst{HYPERLINK "https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/}}\cb1 \
+\ls1\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Install\'a0{\field{\*\fldinst{HYPERLINK "https://www.mongodb.com/try/download/shell?jmp=docs"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 MongoDB Shell}}. If using Windows, make sure to add MongoDB to the Path environment variable to ensure the\'a0
+\f1\b mongo
+\f0\b0 \'a0command is recognized in the CLI. (\ul See instructions in\'a0
+\f2\i\b "Windows installation"\'a0
+\f1\i0 on page 1 of the PDF
+\f0\b0 .\ulnone )\cb1 \
+\ls1\ilvl1\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	4	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Install the Node.js native MongoDB driver to your app. In your CLI, navigate to the root folder of your project and enter at the prompt to install and save as a dependency:\'a0
+\f1\b npm i mongo
+\f0\b0 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0
+\f1\b \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\ul \outl0\strokewidth0 \strokec2 Note\ulnone :\'a0
+\f0\b0 We're looking at MongoDB because it's a popular NoSQL database commonly used with Node.js apps because it's
+\f1\b \'a0JSON-based
+\f0\b0 . There is a link with an example using MySQL with Node in the PDF.\cb1 \uc0\u8232 
+\f1\b \cb3 \ul Note 2\ulnone :
+\f0\b0 \'a0This week we're just looking at the core queries you'd need in most cases (for CRUD). Resource links have been added in the PDF for you to explore more queries on your own. We'll look at securing the DB next week as it's too much to get through this week.\'a0\cb1 \uc0\u8232 
+\f1\b \cb3 \ul Note 3\ulnone :
+\f0\b0 \'a0I have included the code in the PDF for create, read, update, and delete. We most likely won't be able to get through all of the examples in class but I'll go through the complex ones to give you an idea. You can follow the PDF for the rest. (Notice the last bit--update--is incomplete. This is the skeleton code for your lab.)\cb1 \uc0\u8232 \u8232 \u8232 \u8232 
+\fs28 \uc0\u8232 \u8232 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f1\b\fs24 \cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Useful links
+\f0\b0\fs21 \cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}{\field{\*\fldinst{HYPERLINK "https://www.mongodb.com/docs/v7.0/reference/method/"}}{\fldrslt \expnd0\expndtw0\kerning0
+\ul \outl0\strokewidth0 \strokec4 https://www.mongodb.com/docs/v7.0/reference/method/}}\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Reference of mongo shell methods.\cb1 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}{\field{\*\fldinst{HYPERLINK "https://www.mongodb.com/docs/drivers/node/current/"}}{\fldrslt \expnd0\expndtw0\kerning0
+\ul \outl0\strokewidth0 \strokec4 https://www.mongodb.com/docs/drivers/node/current/}}\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Reference for current Node.js driver (v6.6)\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \uc0\u8232 \u8232 
+\fs28 \uc0\u8232 \u8232 \
+}
