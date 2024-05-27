@@ -3,3 +3,7 @@ body {
   background-color:#222;
   margin:0;
 }
+
+a, a:visited {
+  color: yellow;
+}
