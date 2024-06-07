@@ -1,0 +1,11 @@
+extends common/layout
+
+block layout-content 
+  .main-content 
+    h1.page-title My Films
+    each film in films
+      div 
+        h2  #{film.title}
+        div Released #{film.year}
+        div Rating: #{film.rating}
+    

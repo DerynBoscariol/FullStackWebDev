@@ -24,17 +24,19 @@ app.get("/", async (request, response) => {
   let petList = await db.getPets();
   //if there's nothing in the pets collection, initialize with some content then get the pets again
   if (!petList.length) {
-    await db.initializePets(); 
+    await db.initializePets(); // load data into pets
     petList = await db.getPets();
   }
   response.render("index", { pets: petList });
 });
+//Using add pet and redirectiong to homepage, this won't actually render a new page in this case
 app.get("/add", async (request, response) => {
-  await db.addPet("Fred", "fish", "Koi", 1);
+  await db.addPet("Spot", "dog", "Dalmation", 10);
   response.redirect("/");
 });
+//using updatepet and redirect to homepage
 app.get("/update", async (request, response) => {
-  await db.updateName("Max", "Max II");
+  await db.updateName("Spot", "Spot II");
   response.redirect("/");
 })
 

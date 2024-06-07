@@ -3,4 +3,10 @@ extends common/layout
 block layout-content 
   .main-content 
     h1.page-title Testing Mongoose
+    each pet in pets 
+      div 
+        h2  pet.name
+        div breed:  pet.breed
+        div type: #{pet.type}
+        div Age: #{pet.age}
     
