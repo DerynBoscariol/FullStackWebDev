@@ -1,0 +1,9 @@
+extends layout
+
+block main-content
+  - let lName = lib.querySelector("name").textContent;
+  - let lAddress = lib.querySelector("address").textContent;
+  - let lPhone = lib.querySelector("phoneNumber").textContent;
+  h1 #{lName}
+  p #{lAddress}
+  p #{lPhone}

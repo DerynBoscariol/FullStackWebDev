@@ -1,0 +1,13 @@
+header {
+    background-color: #a6d7ff;
+    text-align: center;
+}
+
+#sitename {
+    padding: 1em;
+    margin:0;
+}
+
+#sitename a {
+    color: #122475;
+}

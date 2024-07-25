@@ -1,0 +1,150 @@
+body {
+    background-color: #fcf8e3;
+    padding-left: 4em;
+    padding-right: 4em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FAEBD7;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: 4px solid #C19C4E;
+}
+
+header a {
+    text-decoration: none;
+    color: #5D2A42;
+}
+
+header a:hover {
+    color: #81b5ff;
+}
+
+header a:visited {
+    color: #5D2A42;
+}
+
+header a:visited:hover {
+    color: #81b5ff;
+}
+
+#site-name {
+    font-size: 1.5em;
+}
+
+#year-link {
+    justify-self: flex-end;
+}
+
+h1, h2, h3 {
+    color: #5D2A42;
+}
+#tag-line {
+    font-size: 1.4em;
+}
+
+#art-list{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    list-style: none;
+    margin-top: 3em;
+}
+
+.art-box {
+    border: 3px solid #c19c4e;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    max-width: 18em;
+    min-width: 18em;
+    max-height: fit-content;
+    list-style: none;
+    background-color: #FAEBD7;
+}
+
+.art-box img {
+    max-width: inherit;
+}
+
+.art-box a {
+    max-width: inherit;
+    text-decoration: none;
+    color: #0e2950;
+}
+
+.art-box a:hover{
+    text-decoration: underline;
+}
+
+.art-box:hover {
+    background-color: #ddc29f;
+}
+
+.art-content {
+    display: flex;
+    gap: 6em;   
+}
+
+.art-content img {
+    max-width: 40vw;
+    max-height: 70vh;
+    justify-self: flex-start;
+}
+
+.art-info {
+    justify-self: center;
+}
+
+.fact-content {
+    padding: 2em;
+    background-color: #faebd7;
+    border: 6px solid #C19C4E;
+    margin: 4em;
+}
+
+.facts {
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+}
+
+.year-list {
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+}
+
+.year-link {
+    padding: 1em;
+    background-color: #FAEBD7;
+    margin: 1em;
+    border: 2px solid #C19C4E;
+    max-width: fit-content;
+    min-width: fit-content;
+}
+
+.year-link a {
+    text-decoration: none;
+    color: #0e2950;
+}
+
+.year-link a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    padding-top:2em;
+}

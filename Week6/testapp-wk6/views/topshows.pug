@@ -1,0 +1,14 @@
+extends layout 
+
+block main-content 
+    h1 Most Watched TV Shows
+    div 
+        table 
+            tr
+                th Title
+                th Year
+            each s in shows
+                tr
+                    td 
+                        a(href=`https://imdb.com/title/${s.show.ids.imdb}`) #{s.show.title} 
+                    td Year #{s.show.year}

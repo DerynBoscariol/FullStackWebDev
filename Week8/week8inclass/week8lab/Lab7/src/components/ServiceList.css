@@ -1,0 +1,18 @@
+ul {
+    display: flex;
+    padding: 2em;
+    list-style-type: none;
+    flex-flow: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+
+li {
+    text-align: center;
+}
+
+.sName {
+    font-weight: bold;
+}

@@ -1,0 +1,14 @@
+#main-nav ul {
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    justify-content: space-around;
+    background-color: #fffcc5;
+    padding: 1em;
+    border-top: 2px solid #122475;
+    border-bottom: 2px solid #122475;
+}
+
+li a {
+    color: #372746;
+}
